@@ -1,0 +1,1471 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    border:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+/*Estilo para o pulugin slick*/
+.slick-dotted ul{
+    list-style-type:none;
+    text-align:center;
+    margin: 20px auto 0;
+}
+.slick-dotted li{
+    display:inline-block;
+    margin:0 7px;
+}
+.slick-dotted button:focus{
+    outline:0;
+}
+.slick-dotted button{
+    width:16px;
+    height:16px;
+    border-radius:8px;
+    color:#d8d8d8;
+    border-width:0;
+    background-color: #d8d8d8;
+    opacity:1;
+    cursor:pointer;
+}
+li.slick-active button{
+    background-color:#688293;
+    color:#688293;
+}
+.slick-slide:focus{
+    outline:none;
+}
+/*Estilização Boot*/
+html,body{
+    height:100%;
+}
+.center{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 2%;
+    display:flex;
+    flex-wrap: wrap;    
+}
+.btn-primary{
+    padding: 13px 32px;
+    background-color: rgba(0,0,0,0);
+    border:2px solid #494949;
+    color: #22c99c;
+    border-radius: 5px;
+    font-size:15px;
+    text-transform: uppercase;
+}
+.title {
+    width:100%;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:18px;
+    font-weight:normal;
+    font-style:normal;
+    margin-bottom:30px;
+}
+.clear{
+    clear:both;
+}
+.w20{
+    width:20%;
+    float:left;
+}
+.w33{
+    float:left;
+}
+.w40{
+    width:calc(40% - 60px);
+    float:left;
+}
+.w50{
+    width:calc(50% - 30px);
+    float:left;
+}
+.w60{
+    width:60%;
+    float:left;
+}
+/*Estilização do Header*/
+header{
+    background-color:#fff;
+    padding:15px 0;
+    height:72px;
+}
+div.logo{
+    width:40%;
+}
+nav.menu-desktop{
+    width:60%;
+    text-align: right;
+}
+nav.menu-desktop ul li {
+    display:inline-block;
+    margin:12px;
+}
+nav.menu-desktop ul li a {
+    text-decoration: none;
+    color:#ADADB3;
+    text-transform:uppercase;
+}
+nav.menu-desktop a.active, a:hover{
+    color:#77C9B3;
+}
+.menu-mobile {
+    display:none;
+    text-align:right;
+    width:60%;
+}
+.menu-mobile i {
+    cursor:pointer;
+    color:#ADADB3;  
+    font-size:21px;
+    margin:15px 0;
+}
+.menu-mobile ul {
+    border-top:2px solid #888888;
+    background-color:rgb(255, 255, 255);
+    opacity: 0;
+    transition:1s;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:70px;
+    text-align:center;
+    z-index:2;
+}
+.show-menu{
+    opacity:1 !important;
+}
+.menu-mobile ul li a {
+    color:#ADADB3;
+    text-decoration: none;
+    font-size:17px;
+    padding:12px 0;
+    display:block;
+    text-transform: uppercase;
+}
+.menu-mobile ul li a:hover, .menu-desktop ul li a:hover{
+    transition:0.3s;
+    color:#77C9B3;
+}
+/* Estilização da Section do Banner*/
+.images-branner-initial{
+    position:relative;
+    width:100%;
+    object-fit:contain;
+}
+.images-branner-initial img {
+    width:100%;
+    height:auto; 
+    object-fit:cover;
+}
+img.image{
+    width:100%;
+    height:600px;
+}
+.overlay-banner-initial{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.15);
+}
+.text-banner-initial{
+    position:absolute;
+    left:50%;
+    top:36%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text-banner-initial h5{
+    color:#09e7ac;
+    font-size:40px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 50px;
+    margin:0px 0px 25px 0;
+    padding:0 2%;
+}
+.text-banner-initial h5 span {
+    color:#3A3A3A;
+}
+.text-banner-initial a {
+    cursor:pointer;
+    text-decoration: none; 
+    position:relative;
+    z-index:1000;
+}
+.text-banner-initial a.btn-primary:hover{
+    border-color:#22c99c;
+    transition:1s;
+}
+/*Estilização da Section Serviços da Pagina Inicial */
+.services-page-initial{
+    padding:70px 0;
+    color:#888888;
+}
+.services-single{
+    width:25%;
+    text-align:center;
+    padding:18px;
+}
+.services-single h3 {
+    font-size:22px;
+    text-transform: uppercase;
+    font-style: normal;
+    margin:15px 0 9px;
+    font-weight:200;
+}
+.services-single p {
+    font-size:13px;
+    text-align: center;
+    line-height:21px;
+    font-weight:300;
+}
+/*Estilização da Section Sobre da Página Incial*/
+.about-page-initial{
+    padding:70px 0;
+    background-color:#f8f8f8;
+    color:#888888;
+}   
+.w40about{
+    width:40%;
+    float:left;
+}
+.w60about{
+    width:60%;
+    float:left;
+}
+.about-compound{
+    width:100%; 
+}
+.about-compound img{
+    width:100%;
+    max-height:280px;
+    padding-right: 20px;
+}
+.w50about{
+    width:50%;
+    float:left;
+    padding:0 15px;
+}
+.about-single p {
+    font-size:13px;
+    font-weight:lighter;
+    line-height:20px;
+    
+}
+/*Estilização da Section Tratamentos da  Página Inicial*/
+.trataments-page-initial{
+    padding:70px 0;
+}
+.trataments-single{
+    width:25%;
+    padding:20px;
+}
+.trataments-single i {
+    color:#77C9B3;
+}
+.trataments-single a{
+    text-decoration:none;
+}
+.trataments-single span:hover{
+    color:#888888;
+}
+.trataments-single span{
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight:500;
+    color:#77C9B3;
+    padding:0px 0px 0px 5px;
+}
+.trataments-single p {
+    margin-top:10px;
+    font-size:13px;
+}
+/*Estilização da Section Time dos Dentistas da Página Inicial */
+
+.dentists-team-compound{
+    padding:0 1%;
+}
+.dentists-team-single{
+    width:calc(25% - 5px);
+    float:left;
+    padding:40px 20px;
+    background-color:#f8f8f8;
+    text-align:center;
+    margin-right: 5px;
+    height:100%;
+    max-height:390px;
+}
+.dentists-team-single img {
+    border-radius:50%;
+    width:100%;
+    max-width:171px;
+}
+.dentists-team-single h3{
+    margin:10px 0;
+    color:#77C9B3;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight:lighter;
+    font-size:14px;
+}
+.dentists-team-single span{
+    font-size:22px;
+    font-weight:400;
+}
+.dentists-team-single p {
+    color:#888888;
+    font-size:12px;
+    padding:0px 70px;
+}
+/*Estilização da Section Depoimentos da Página Inicial */
+.depoiments{
+    padding:70px 0;
+}
+.depoiments > .center{
+    padding:20px 0;;
+    max-width:700px;
+}
+.depoiment-single{
+    text-align:center;
+    width:100%;
+    padding:0;
+}
+.depoiment-single i {
+    font-size:40px;
+    display:block;
+    margin-bottom:10px;
+    color:#b3b3b3;
+}
+.depoiment-single quote {
+    color:#888888;
+    font-weight:lighter;
+    line-height: 25px;
+    font-size:15px;
+}
+.name-depoiment{
+    padding:12px 0;
+}
+.name-depoiment img {
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:contain;
+    margin:12px 0;
+    display:inline-block;
+}
+.name-depoiment span{
+    color:#77C9B3;
+    text-transform:uppercase;
+}
+/*Estilização do Footer da Página Inicial */
+footer{
+    padding:50px 0;
+    background-color:#f8f8f8;
+}
+.container-footer{
+    display:flex;
+    max-width: 1280px;
+    margin:0 auto;
+}
+.item-footer-single{
+    margin:10px;
+    padding:5px;
+    width:100%;
+}
+.item-footer-single p {
+    font-size:13px;
+    margin-top:20px;
+}
+.title-footer{
+    position:relative;
+    top:15px;
+    color:#888888;
+    font-size:18px;
+    margin-bottom:43px;
+    text-transform: uppercase;
+    font-weight:normal;
+}
+.item-footer-single img {
+    cursor:pointer;
+}
+.item-footer-single ul {
+    list-style-type: none;
+}
+.item-footer-single ul li {
+    margin:25px 0;
+}
+.item-footer-single ul li a {
+    text-decoration: none;
+    color:#77C9B3;
+    font-weight: 500;
+    font-size:14px;
+    font-family:"Ubuntu", Sans-serif;
+}
+.item-footer-single ul li a:hover{
+    color:#888888;
+    transition:1s;
+}
+.item-footer-single:nth-of-type(1){
+    max-width:250px;
+}
+.item-footer-single:nth-of-type(2){
+    max-width:10%;
+}
+.hover-effect{
+    overflow:hidden;
+    position:relative;
+    text-align: center; 
+    width: calc(50% - 10px);
+    float:left;
+    margin-right:10px; 
+}
+.hover-effect img {
+    width:100%;
+    height:100%;
+    max-height:150px;
+}
+.overlay{
+    background-color: rgba(94, 92, 92, 0.7);
+    width:100%;
+    height:100%;
+    position: absolute;
+    overflow: hidden;
+    top:0;
+    left:0;
+    transition: all 0.3s ease-in-out;
+    opacity:0;
+}
+.hover-effect:hover .overlay{
+    opacity:1;
+}
+.block-text-overlay{
+    position:relative;
+    top: 36%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    color:#fff;
+}
+.overlay h3 {
+    font-size:16px;
+}
+.overlay a{
+    text-decoration:none;
+} 
+.btn-efect-footer{
+    background-color:#77C9B3;
+    position:absolute;
+    margin-top:10px;
+    color:#fff;
+    width:48%;
+    height:30px;
+    line-height:30px;
+    border-radius:10px;
+    cursor:pointer;
+    left:25%;
+    font-size:12px;
+}
+.btn-efect-footer:hover{
+    background-color:#0adaa2;
+    transition:0.2s;
+}
+.icon-single{
+    display:inline-block;
+    font-size:18px;
+}
+div.item-footer-single p.text-contact{
+    margin-top:-5px;
+}
+.icons-footer{
+    margin-top:15px;
+}
+.icons-footer a{
+    text-decoration: none;
+    font-size:14px;
+    color:#77C9B3;
+}
+.icons-footer span, a.telephone-footer{
+    padding:0px 0px 0px 5px;
+} 
+.icons-footer span:hover, a.telephone-footer:hover{
+    color:#888888;
+}
+.icons-footer:nth-of-type(2) span{
+    font-size:12px;
+}
+.item-footer-single p {
+    color: #888888;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21px;
+}
+.social-medias {
+    margin:15px 0 0 5px;
+}
+.social-medias a {
+    text-decoration: none;
+    color:#bbbbbb;
+    font-size:20px;
+}
+.social-medias a:hover{
+    color:#77C9B3;
+}
+.social-medias i {
+    margin-right:10px;
+}
+/*Seta back-to-top */
+.back-to-top {
+    cursor:pointer;
+    display:block;
+    position:fixed;
+    bottom:10px;
+    right:20px;
+}
+.back-to-top i{
+    color:#8fcbbf;
+    font-size:32px;
+}
+.back-to-top i:hover{
+    color:#1da58a;
+}
+/*Estilização Página Sobre */
+.header-pages{
+    background-color:#f8f8f8;
+    padding:20px;
+    color:#ADADB3;
+    font:14px "Open Sans", sans-serif;
+}
+.flex-header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 1280px;
+}
+.text-left-header-pages h3 {
+    color:#888888;
+    font: 22px Ubuntu, sans-serif;
+}
+.text-right-header-pages{
+    display: flex;
+    flex-direction:row;
+    margin-right:20px;
+}
+.text-right-header-pages h3 {
+    font:14px Ubuntu, sans-serif;
+}
+.text-right-header-pages h3:last-child{
+    color:#77c9b3;
+}
+.text-right-header-pages i {
+    margin:0 10px;
+    display: flex;
+    align-items:center;
+}
+.section-description-about{
+    padding:40px 20px;
+}
+.flex-section-description-about{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+}
+.item-section-description-about{
+    flex:2;
+    margin:10px 15px;
+}
+.item-section-description-about img {
+    width:100%;
+}
+.flex2{
+    flex:1;
+}
+.title-section-description-about{
+    color:#77C9B3;
+    text-transform: uppercase;
+    font: 13px Ubuntu, sans-serif;
+    line-height:20px;
+}
+.subtitle-section-description-about{
+    color:#888888;
+    font:13px Ubuntu, sans-serif;
+    margin:20px 0px;
+    line-height:22px;
+}
+.philosophy-page-about{
+    color:#888888;
+    font: 14px 'Open Sans', sans-serif;
+    background-color:#F8F8F8;
+    padding:70px 0px;   
+}
+.philosophy-compound{
+    display:flex;   
+    width:100%;
+    justify-content:space-between;
+}
+.item-philosophy-page-about{
+    margin-right: 20px;
+    flex:1;
+}
+.title-philosophy-page-about, .title-structure-page-about{
+    color:#77C9B3;
+    font:18px Ubuntu, sans-serif;
+    text-transform: uppercase;
+    margin-bottom:20px;
+}
+.subtitle-philosophy-page-about{
+    font:13px Ubuntu, sans-serif;
+}
+.structure-page-about{
+    padding:70px 0px;
+}
+.structure-page-about-compound{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+}
+.item-structure-page-about{
+    margin:0 10px;
+}
+.item-structure-page-about img{
+    width:100%;
+    height:100%;
+}
+.item-structure-page-about .title-structure-page-about{
+    text-align:center;
+} 
+.our-technologies-page-about{
+    padding:70px 0px;
+}
+.our-technologies-compound{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.item-our-technologies-about{
+    max-width:46%;
+    background-color:#F8F8F8;
+    font: 14px "Open Sans", sans-serif;
+    margin:0px 15px 25px 0;
+    padding:20px 34px;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    border-radius: 5px;
+    text-align: center;
+    flex-wrap:wrap;
+}
+.item-our-technologies-about h3{
+    color: #77c9b3;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 24px;
+    margin:20px;
+}
+/*Estilização da Página Tratamentos */
+.warning-page-trataments{
+    padding:50px 0;
+    border-bottom: 2px solid #EFEFEF;
+}
+.warning-page-trataments h2, i{
+    font-size:18px;
+    color:#77c9b3;
+    font-family: "Ubuntu", Sans-serif;
+    font-size:20px;
+    font-weight:normal;
+    margin-left:10px;
+}
+.flex-warning-page-trataments{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.buttons-page-trataments{
+    padding:40px 0px;
+}
+.buttons-compound{
+    display:flex;
+    flex-direction: row;
+}
+.button-item-page-trataments{
+    margin-right:15px;
+}
+.button-item-page-trataments button{
+    padding:14px 30px; 
+    cursor:pointer;
+}
+.button-item-page-trataments button a {
+    text-decoration: none;
+    color:#888888;
+    text-transform: uppercase;
+    font: 14px Ubuntu,sans-serif;
+}
+.button-item-page-trataments button:hover, .button-item-page-trataments button a:hover {
+    background-color: #484646;
+    color:#fff;
+}
+.categories-trataments{
+    padding-bottom:40px;
+}
+.categories-trataments-compound{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    flex-wrap:wrap;
+}
+.categories-trataments-item{
+    background-color:#f8f8f8;
+    width:30%;
+    margin: 15px 5px;
+}
+.img-categories-trataments img{
+    width:100%;
+    max-width:380px;
+    object-fit: cover;
+}
+.text-categories-trataments{
+    padding:30px;
+}
+.text-categories-trataments h2{
+    color: #77c9b3;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.text-categories-trataments p{
+    color: #888888;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21px;
+}
+.clareamento-dental, .ortodontia, .implantes{
+    display:none;
+}
+/* Estilização da Página News*/
+.news-page-news{
+    padding:40px 0;
+}
+.news-compund-page-news{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    max-width: 800px;
+    margin:0 auto;
+    border-bottom:2px solid #ebeced;
+    padding:0 2%;
+}
+.news-single-page-news{
+    display:flex;
+    width:800px;
+    flex-direction: column;
+    margin:20px 0px;
+}
+.block-text-page-news .some-facts{
+    display:flex;
+    flex-direction: row;
+}
+.block-text-page-news .some-facts p:first-child  {
+    margin-right: 30px;
+}
+.block-text-page-news h2 {
+    color:#77C9B3;
+    font: 30px "Open-sans", sans-serif;
+    text-transform: uppercase;
+    margin-bottom:15px;
+}
+.img-page-news img {
+    width:100%;
+    border-radius:10px;
+    margin:25px 0;
+    object-fit:center;
+}
+.noticies-page-news p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #adadb3;
+    margin-bottom:15px;
+}
+.footer-news-single{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:40px;
+}
+.item-left-footer-news{
+    margin:0px 15px;
+    padding:10px 12px;
+    background-color:#f1f4f6; 
+    border-radius:5px; 
+    display:flex;
+    font-size:12px;
+    cursor:pointer;
+}
+.item-left-footer-news:hover{
+    background-color:#00838F;
+}
+.item-left-footer-news i:hover{
+    color:#FFF;
+}
+.item-left-footer-news i {
+    color:#30373F;
+    display:flex;   
+    justify-content:center;
+    align-items: center;
+    margin-right: 5px;
+}
+.item-right-footer-news{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Poppins, serif;
+    color: #ffffff;
+    background-color: #00838f;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin:0px 15px;
+    padding:10px 15px;
+    cursor:pointer;
+    border-radius:5px;
+}
+.item-right-footer-news:hover{
+    background-color:#0194a2;
+}
+/* Estilização da Página Contato*/
+.mapas{
+    width:100%;
+    height:700px;
+    margin-top:30px;
+    padding:0 2%;
+}
+iframe{
+    width:100%;
+    height:700px;
+}
+.contact-page-contact{
+    padding:40px 2%;
+}
+.contact-compound-page-contact{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.contact-single-page-contact:nth-child(1){
+    margin-right:50px;
+}
+.contact-single-page-contact:nth-child(2){
+    width:100%;
+}
+.title-footer-page-contact {
+    color: #888888;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 26px;
+}
+.subtitle-footer-page-contact{
+    color: #77c9b3;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    margin: 15px 0;
+}
+.description-footer-page-contact{
+    color: #888888;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21px;
+}
+input[type="text"],textarea{
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    padding: 12px 18px 12px 18px;
+    margin: 15px 10px 15px 0px;
+    border: 1px solid #ebeced;
+    background-color: rgba(247, 246, 246, 0);
+    color: #888888;
+    outline:0;
+    width:30%;
+}
+input[type="text"]:nth-of-type(3){
+    margin-right:0; 
+    right:0;
+}
+textarea{
+    width:94.2%;
+    height:200px;
+    resize:none;
+}
+.btn-footer-page-contact{
+    background-color: rgba(0,188,212,0);
+    color: #77c9b3;
+    padding: 9px 21px 9px 21px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #dddddd;
+    border-radius: 3px 3px 3px 3px;
+    margin: 15px 0px 0px 0px;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    cursor:pointer;
+    text-transform:uppercase;
+}
+.btn-footer-page-contact:hover{
+    border-color:#77c9b3;
+}
+/*Estilização da Página 404 */
+.erro-404{
+    margin:50px 0;
+    display:flex;
+    align-items:center;
+    min-height:calc(100vh - 590px);
+}
+.erro-404 > .center{
+    display:flex;
+    flex-direction: column;
+}
+.erro-404  h2 {
+    margin:20px 0;
+    color: #888888;
+}
+.erro-404 a {
+    text-decoration: none;
+    color:#888888;
+    cursor:pointer;
+}
+.erro-404 i {
+    color:#888888;
+    padding:0 5px;
+}
+@media only screen and (max-width: 1024px){
+    nav.menu-desktop{
+        width:70%;
+    }
+    div.logo{
+        width:30%;
+    }
+    img.image{
+        height:350px;
+    }
+    .text-banner-initial{
+        left:45%;
+        top:20%;
+    }
+    .text-banner-initial h5{
+        font-size:35px;
+        font-weight: 300;
+        line-height: 50px;
+        margin:0px 0px 20px 0;
+    }
+    .btn-primary{
+        padding: 12px 25px;
+        font-size:13px;
+    }
+    .services-page-initial{
+        padding:30px 0;
+    }
+    .services-single{
+        width:50%;
+        padding:10px;
+    }
+    .services-single{
+        width:50%;
+        padding:10px;
+    }
+    .about-page-initial{
+        padding:30px 0;
+        text-align:justify;
+    }   
+    .w40about{
+        width:60%;
+        margin:0 auto;
+        float:none;
+    }
+    .w60about{
+        width:100%;
+        float:none;
+        margin:20px auto;
+    }
+    .about-single p{
+        margin-bottom:10px;
+    }
+    .about-compound{
+        padding:0 3%;
+    }
+    .about-compound img{
+        max-height:350px;
+        padding-right:0;
+    }
+    .w50about{
+        width:50%;
+    }   
+    .trataments-page-initial{
+        padding:30px 0;
+    }
+    .trataments-single{
+        width:50%;
+        padding:15px;
+    } 
+    .dentists-team-single{
+        width: calc(50% - 10px);
+        float:left;
+        padding:40px 20px;
+        margin:0 10px 20px 0;
+        max-height:320px;
+    }
+    .dentists-team-single span{
+        font-size:18px;
+    }
+    .dentists-team-single p {
+        padding:0px 50px;
+    }
+    .order-item1-footer{
+        order:1;
+    }
+    .order-item2-footer{
+        order:3;
+    }
+    .order-item3-footer{
+        order:4;
+    }
+    .order-item4-footer{
+        order:2;
+    }
+    footer{
+        padding:30px 0;
+        background-color:#f8f8f8;
+    }
+    .container-footer{
+        display:flex;
+        max-width: 1280px;
+        margin:0 auto;
+        flex-wrap:wrap;
+    }
+    .item-footer-single{
+        width:calc(33.33% - 30px);
+        float:left;
+        margin:10px;
+        padding:5px;
+    }
+    .item-footer-single p {
+        width:95%;
+    }
+    .item-footer-single:nth-of-type(1){
+        max-width:50%;
+    }
+    .item-footer-single:nth-of-type(2){
+        max-width:50%;
+    }
+    .item-footer-single:nth-of-type(3){
+        width:100%;
+    }
+    .hover-effect{
+        width: calc(50% - 10px);
+        margin-bottom:20px;
+    }
+    .hover-effect img {
+        max-height:250px
+    }
+    .overlay h3 {
+        font-size:32px;
+    }
+    .btn-efect-footer{
+        width:38%;
+        left:32%;
+        font-size:16px;
+    }
+    .flex-section-description-about{
+        display:flex;
+        flex-direction:column;
+    }
+    .item-section-description-about{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+    }
+    .item-section-description-about img {
+        width:100%;
+        max-width: 500px;
+        margin:0 auto;
+    }
+    .philosophy-compound{
+        flex-wrap: wrap;
+    }
+    .philosophy-compound{
+        display:flex;   
+        justify-content:center;
+    }
+    .item-philosophy-page-about{
+        margin:20px;
+        flex:1 45%;
+        flex-wrap: wrap;
+    }
+    input[type="text"],textarea{
+        width:100%;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .menu-desktop{
+        display:none;
+    }
+    div.logo{
+        width:20%;
+    }
+    .menu-mobile{
+        width:80%;
+        display:block;
+        z-index:999;
+    }
+    img.image{
+        height:350px;
+    }
+    .text-banner-initial{
+        left:35%;
+        top:20%;
+    }
+    .text-banner-initial h5{
+        font-size:26px;
+        font-weight: 300;
+        line-height: 50px;
+        margin:0px 0px 20px 0;
+    }
+    .btn-primary{
+        padding: 12px 25px;
+        font-size:13px;
+    }
+    .services-page-initial{
+        padding:30px 0;
+    }
+    .services-single{
+        width:50%;
+        padding:10px;
+    }
+    .about-page-initial{
+        padding:30px 0;
+        text-align:justify;
+    }   
+    .w40about{
+        width:60%;
+        margin:0 auto;
+        float:none;
+    }
+    .w60about{
+        width:100%;
+        float:none;
+        margin:20px auto;
+    }
+    .about-single p{
+        margin-bottom:10px;
+    }
+    .about-compound{
+        padding:0 3%;
+    }
+    .about-compound img{
+        max-height:250px;
+        padding-right:0;
+    }
+    .w50about{
+        width:100%;
+        padding:0 15px;
+    }
+    .trataments-page-initial{
+        padding:30px 0;
+    }
+    .trataments-single{
+        width:50%;
+        padding:15px;
+    }
+    .dentists-team-single{
+        width: calc(50% - 10px);
+        float:left;
+        padding:40px 20px;
+        margin:0 10px 20px 0;
+        max-height:350px;
+    }
+    .dentists-team-single span{
+        font-size:18px;
+    }
+    .dentists-team-single p {
+        padding:0px 50px;
+    }
+    .depoiments{
+        padding:30px 0;
+    }
+    .depoiments > .center{
+        padding:10px 0;
+        max-width:450px;
+    }
+    footer{
+        padding:30px 0;
+        background-color:#f8f8f8;
+    }
+    .container-footer{
+        display:flex;
+        max-width: 1280px;
+        margin:0 auto;
+        flex-wrap:wrap;
+    }
+    .item-footer-single{
+        width:100%;
+        float:left;
+        margin:10px;
+        padding:5px;
+    }
+    .item-footer-single p {
+        width:95%;
+    }
+    .item-footer-single:nth-of-type(1){
+        max-width:100%;
+    }
+    .item-footer-single:nth-of-type(2){
+        max-width:100%;
+    }
+    .hover-effect img {
+        max-height:200px
+    }
+    .overlay h3 {
+        font-size:25px;
+    }
+    .btn-efect-footer{
+        width:38%;
+        left:32%;
+        font-size:14px;
+    }
+    .structure-page-about-compound{
+        flex-wrap: wrap;
+        justify-content:center;
+        height:100%;
+    }
+    .item-structure-page-about{
+        margin:40px 10px;
+    }
+    .item-structure-page-about img {
+        flex-wrap: wrap;
+        width:100%;
+        height:100%;
+        max-width:280px;
+        max-height: 250px;
+    }
+    .our-technologies-compound{
+        display:flex;
+        width:100%;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
+    .item-our-technologies-about{
+        width:100%;
+        max-width:700px;
+    }
+    .categories-trataments-compound{
+        width:100%;
+    }
+    .categories-trataments-item{
+        width:100%;
+        max-width:900px;
+    }
+    .img-categories-trataments img{
+        width:100%;
+        max-width:900px;
+    }
+    .buttons-compound{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .button-item-page-trataments{
+        margin-right:15px;
+        margin-bottom:10px;
+    }
+    .button-item-page-trataments button{
+        padding:14px 30px; 
+        cursor:pointer;
+    }
+    .contact-compound-page-contact{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .contact-single-page-contact:nth-child(1){
+        margin-bottom:30px;
+    }
+    .mapas{
+        height:500px;
+    }
+    iframe{
+        height:500px;
+    }
+} 
+@media only screen and (max-width: 500px){
+    img.image{
+        width:100%;
+        height:250px;
+    }
+    .text-banner-initial{
+        left:40%;
+        top:20%;
+    }
+    .text-banner-initial h5{
+        font-size:15px;
+        font-weight: 400;
+        line-height: 35px;
+        margin:0px 0px 20px 0;
+    }
+    .btn-primary{
+        padding: 8px 15px;
+        font-size:13px;
+    }
+    .services-page-initial{
+        padding:30px 0;
+    }
+    .services-single{
+        width:100%;
+        padding:10px;
+    }
+    .about-page-initial{
+        padding:30px 0;
+        text-align:justify;
+    }   
+    .w40about{
+        width:100%;
+        float:none;
+    }
+    .w60about{
+        width:100%;
+        float:none;
+        margin:20px auto;
+    }
+    .about-single p{
+        margin-bottom:10px;
+    }
+    .about-compound{
+        padding:0 3%;
+    }
+    .about-compound img{
+        max-height:250px;
+        padding-right:0;
+    }
+    .w50about{
+        width:100%;
+        padding:0 15px;
+    }
+    .trataments-page-initial{
+        padding:30px 0;
+    }
+    .trataments-single{
+        width:100%;
+        padding:15px;
+    }
+    .dentists-team-compound{
+        padding:0 10%;
+    }
+    .dentists-team-single{
+        width:100%;
+        padding:40px 10px;
+        margin-bottom:20px;
+        max-height:280px;
+    }
+    .dentists-team-single img {
+        max-width:120px;
+    }
+    .dentists-team-single span{
+        font-size:15px;
+    }
+    .depoiments{
+        padding:30px 0;
+    }
+    .depoiments > .center{
+        padding:10px 0;
+        max-width:300px;
+    }
+    .depoiment-single i {
+        font-size:30px;
+    }
+    footer{
+        padding:30px 0;
+        background-color:#f8f8f8;
+    }
+    .container-footer{
+        display:flex;
+        max-width: 1280px;
+        margin:0 auto;
+        flex-wrap:wrap;
+    }
+    .item-footer-single{
+        width:100%;
+        float:left;
+        margin:10px;
+        padding:5px;
+    }
+    .item-footer-single p {
+        width:95%;
+    }
+    .item-footer-single:nth-of-type(1){
+        max-width:100%;
+    }
+    .item-footer-single:nth-of-type(2){
+        max-width:100%;
+    }
+    .hover-effect img {
+        max-height:150px
+    }
+    .overlay h3 {
+        font-size:20px;
+    }
+    .btn-efect-footer{
+        width:45%;
+        left:27%;
+        font-size:14px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .depoiments > .center{
+        max-width:200px;
+    }
+    .hover-effect img {
+        max-height:100px
+    }
+    .overlay h3 {
+        font-size:14px;
+    }
+    .btn-efect-footer{
+        height:20px;
+        line-height: 20px;
+        font-size:10px;
+    }
+}
